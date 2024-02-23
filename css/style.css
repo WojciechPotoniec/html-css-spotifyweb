@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    height: 100vh;
+    background-color: blue;
+    /* overflow: hidden; */
+}
+#toolbar {
+    height: 90px;
+    background-color: red;
+}
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+#sidebar {
+    width: 200px;
+    background-color: green;
+}
+main {
+    width: calc(100% - 200px);
+    /* flex-grow: 1; */
+    padding-top: 100px;
+    overflow-y: auto;
+}
+.header {
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+/* flex utility */
+.d-flex{
+    display: flex;
+}
