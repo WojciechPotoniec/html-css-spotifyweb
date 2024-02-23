@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+	--color-main: #141922;
+	--color-sidebar: #000000;
+	--color-toolbar: #282828;
+	--color-playlist-square: #a3a3a3;
+	--color-text-color: #ffffff;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
 .wrapper {
     height: 100vh;
     background-color: blue;
