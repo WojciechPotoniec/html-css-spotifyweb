@@ -95,7 +95,7 @@ a {
 #profile {
     overflow: hidden;
 }
-#sidebar .square .icon {
+#sidebar .square .plus {
   margin: 0 auto;  
 }
 
@@ -117,7 +117,6 @@ section h2 {
 }
 .card-content img {
     width: 100%;
-    /* object-fit: cover; */
 }
 .card-text h3 {
     color: var(--color-text-light);
@@ -127,12 +126,46 @@ section h2 {
     color: var(--color-playlist-square);
     text-align: center;
 }
-#for-you dd, #popular dd {
+dd {
     color: var(--color-playlist-square);
 }
 #popular .card-content {
     border-radius: 50%;
     overflow: hidden;
+}
+#toolbar {
+    padding: 10px;
+}
+.left-container{
+    width: calc(200px - 10px);
+}
+.left-content {
+    width: 40px;
+}
+#toolbar .left-content img {
+    width: 100%;
+}
+#toolbar dd {
+    font-size: 0.7em;
+}
+.player-bar {
+    width: 400px;
+    height: 1px;
+    border: 2px solid var(--color-playlist-square);
+    border-radius: 40px;
+}
+.volume-bar {
+    width: 130px;
+    height: 1px;
+    border: 2px solid var(--color-playlist-square);
+    border-radius: 40px;
+}
+#toolbar .icon {
+    font-size: 1.6em;
+    padding-bottom: 20px;
+}
+.control-media {
+    width: 40%;
 }
 
 /* utility */
@@ -163,6 +196,9 @@ section h2 {
 .text-grey {
     color: var(--color-playlist-square);
 }
+.text-center {
+    text-align: center;
+}
 
 /* flex utility */
 .d-flex {
@@ -182,4 +218,7 @@ section h2 {
 }
 .justify-center {
     justify-content: center;
+}
+.flex-end {
+    justify-self: flex-end;
 }
