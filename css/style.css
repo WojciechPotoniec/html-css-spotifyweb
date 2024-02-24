@@ -18,6 +18,9 @@ body {
 .debug {
     border: 1px solid red;
 }
+ul {
+    list-style: none;
+}
 /* general rules */
 .wrapper {
     height: 100vh;
@@ -54,27 +57,25 @@ main {
 a {
     text-decoration: none;
 }
-.icon {
-    font-size: 1.4em;
-    margin-right: 10px;
-}
 
 /* sidebar content */
 #sidebar .logo {
     width: 70%;
 }
-#sidebar ul {
-    padding: 10px 0;
+#home {
+    width: 25px;
 }
-#sidebar ul li {
-    padding: 5px 0;
+#search {
+    width: 25px;
 }
-#sidebar h4 {
-    text-transform: uppercase;
-    padding: 5px 0;
+#library {
+    width: 25px;
+}
+#sidebar span {
+    font-size: 0.7em;
 }
 #sidebar h5 {
-    padding-left: 10px;
+    text-transform: uppercase;
 }
 .square {
     background-color: var(--color-playlist-square);
@@ -82,17 +83,25 @@ a {
     height: 35px;
     margin: 10px 0;
 }
+#download {
+    width: 15px;
+}
 .circle {
     background-color: var(--color-playlist-square);
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
+#profile {
+    overflow: hidden;
+}
 #sidebar .square .icon {
   margin: 0 auto;  
 }
-#sidebar h6 {
-    padding: 5px 0;
+
+/* main content */
+nav ul li a {
+    text-transform: uppercase;
 }
 
 /* utility */
@@ -116,14 +125,6 @@ a {
     margin: 10px 0;
 }
 
-/* padding & margin utility */
-.pb-10 {
-    padding-bottom: 10px;
-}
-.ml-10 {
-    margin-left: 10px;
-}
-
 /* text utility */
 .text-light {
     color: var(--color-text-light);
@@ -144,6 +145,9 @@ a {
 }
 .s-between {
     justify-content: space-between;
+}
+.s-rounded {
+    justify-content: space-around;
 }
 .justify-center {
     justify-content: center;
