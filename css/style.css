@@ -103,6 +103,37 @@ a {
 nav ul li a {
     text-transform: uppercase;
 }
+#recently, #for-you, #popular {
+    padding: 20px;
+}
+section h2 {
+    color: var(--color-text-light);
+}
+.content {
+    gap: 20px;
+}
+.card {
+    width: calc(100% / 6);
+}
+.card-content img {
+    width: 100%;
+    /* object-fit: cover; */
+}
+.card-text h3 {
+    color: var(--color-text-light);
+    text-align: center;
+}
+.card-text dd {
+    color: var(--color-playlist-square);
+    text-align: center;
+}
+#for-you dd, #popular dd {
+    color: var(--color-playlist-square);
+}
+#popular .card-content {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 /* utility */
 .btn {
