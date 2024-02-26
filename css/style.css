@@ -163,6 +163,9 @@ dd {
 .player-bar {
     width: 100%;
 }
+.player-bar span {
+    font-size: 0.7em;
+}
 .progress-bar {
     width: 100%;
     height: 1px;
@@ -177,13 +180,13 @@ dd {
 }
 #toolbar  .icon {
     font-size: 1.6em;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 #toolbar .small-icon {
     font-size: 0.7em;
 }
 .control-media {
-    width: 250px;
+    width: 200px;
 }
 
 /* utility */
