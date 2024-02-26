@@ -146,13 +146,13 @@ dd {
     padding: 10px;
 }
 .left-toolbar{
-    width: calc(25% - 10px);
+    width: calc(200px - 10px);
 }
 .center-toolbar {
-    width: 50%;
+    width: 500px;
 }
 .right-toolbar {
-    width: calc(25% - 10px);
+    width: calc(200px - 10px);
 }
 .left-content {
     width: 40px;
@@ -161,23 +161,29 @@ dd {
     font-size: 0.7em;
 }
 .player-bar {
-    width: 400px;
+    width: 100%;
+}
+.progress-bar {
+    width: 100%;
     height: 1px;
     border: 2px solid var(--color-playlist-square);
     border-radius: 40px;
 }
 .volume-bar {
-    width: 130px;
+    width: 100px;
     height: 1px;
     border: 2px solid var(--color-playlist-square);
     border-radius: 40px;
 }
-#toolbar .icon {
+#toolbar  .icon {
     font-size: 1.6em;
     padding-bottom: 20px;
 }
+#toolbar .small-icon {
+    font-size: 0.7em;
+}
 .control-media {
-    width: 40%;
+    width: 250px;
 }
 
 /* utility */
@@ -231,8 +237,11 @@ dd {
 .justify-center {
     justify-content: center;
 }
-.flex-end {
-    justify-self: flex-end;
+.f-end {
+    align-items: flex-end;
+}
+.f-wrap {
+    flex-wrap: wrap;
 }
 
 /* media query */
