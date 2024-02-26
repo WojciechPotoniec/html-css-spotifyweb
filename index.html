@@ -35,6 +35,9 @@
                     <div class="logo pb-20">
                         <img src="img/logo.svg" alt="Logo">
                     </div>
+                    <div class="logo-small pb-20">
+                        <img src="img/logo-small.svg" alt="Logo-small">
+                    </div>
                     <ul>
                         <li class="pb-5">
                             <a href="#" class="text-grey d-flex align-center">
@@ -61,53 +64,52 @@
                             </a>
                         </li>
                     </ul>
-                    <ul>
-                        <li>
-                            <h5 class="text-light pt-10">Playlist</h5>
-                        </li>
-                        <li class="d-flex align-center">
+                    <div class="playlist">
+                        <h5 class="text-light pt-10">Playlist</h5>
+                        <div class="d-flex align-center">
                             <div class="square d-flex align-center">
                                 <i class="plus mr-10 fa-solid fa-plus"></i>
                             </div>
-                            <span class="text-grey pl-10">Crea Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                        <li class="pb-10">
-                            <span class="text-grey">Nome Playlist</span>
-                        </li>
-                    </ul>
+                            <a href="#" class="text-grey ml-10">Crea Playlist</a>
+                        </div>
+                        <ul>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a>
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                            <li class="pb-10">
+                                <a href="#" class="text-grey">Nome Playlist</a> 
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <div class="b-bottom pb-5">
+                <div class="bottom-sidebar pb-5">
                         <a href="#" class="d-flex text-grey">
                             <div id="download" class="mr-5">
                                 <img src="img/download.svg" alt="download">
                             </div>
                             <span>Installa App</span>
                         </a>
-                    </div>
+                        <div class="b-bottom"></div>
                     <a href="#" class="d-flex align-center text-light">
                         <div id="profile" class="circle">
                             <img src="img/profile.svg" alt="profile">
                         </div>
-                        <h6 class="pl-10">John Doe</h6>
+                        <h4 class="pl-10">John Doe</h4>
                     </a>
                 </div>
             </div>
@@ -115,18 +117,18 @@
             <!-- main begin -->
             <main>
                 <nav class="d-flex justify-center text-grey mb-20">
-                    <ul class="d-flex">
-                        <li class="pr-10"><a href="#" class="text-light">in evidenza</a></li>
-                        <li class="pl-20 pr-20"><a href="#" class="text-light">podcast</a></li>
-                        <li class="pl-20 pr-20"><a href="#" class="text-light">classifiche</a></li>
-                        <li class="pl-20 pr-20"><a href="#" class="text-light">generi e mood</a></li>
-                        <li class="pl-20 pr-20"><a href="#" class="text-light">nuove uscite</a></li>
-                        <li class="pl-10"><a href="#" class="text-light">scopri</a></li>
+                    <ul class="d-flex justify-center f-wrap">
+                        <li class=""><a href="#" class="text-light">in evidenza</a></li>
+                        <li class=""><a href="#" class="text-light">podcast</a></li>
+                        <li class=""><a href="#" class="text-light">classifiche</a></li>
+                        <li class=""><a href="#" class="text-light">generi e mood</a></li>
+                        <li class=""><a href="#" class="text-light">nuove uscite</a></li>
+                        <li class=""><a href="#" class="text-light">scopri</a></li>
                     </ul>
                 </nav>
                 <section id="recently">
                     <h2>Recently played</h2>
-                    <div class="content d-flex">
+                    <div class="content d-flex f-wrap">
                         <div class="card mt-30 mb-20">
                             <div class="card-content mb-10 ">
                                 <img src="img/metal_lifting.jpg" alt="metal_lifting">
@@ -232,7 +234,7 @@
 
         <!-- toolbar begin -->
         <div id="toolbar" class="d-flex s-between align-center">
-            <div class="left-container d-flex align-center s-between">
+            <div class="left-toolbar d-flex align-center s-between">
                 <div class="d-flex align-center">
                     <div class=" left-content">
                         <img src="img/sinister.jpeg" alt="album">
@@ -251,7 +253,7 @@
                     </a>
                 </div>
             </div>
-            <div class="d-flex flex-column align-center">
+            <div class="center-toolbar d-flex flex-column align-center">
                 <div class="control-media">
                     <div class="icon d-flex s-between text-light text-center">
                         <i class="fa-solid fa-shuffle"></i>
