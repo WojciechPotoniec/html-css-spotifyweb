@@ -21,6 +21,10 @@ body {
 ul {
     list-style: none;
 }
+img {
+    width: 100%;
+    display: block;
+}
 /* general rules */
 .wrapper {
     height: 100vh;
@@ -62,17 +66,20 @@ a {
 #sidebar .logo {
     width: 70%;
 }
-#home {
+#sidebar .logo-small {
+    width: 20%;
+    display: none;
+}
+#home, #search, #library{
     width: 25px;
 }
-#search {
-    width: 25px;
-}
-#library {
-    width: 25px;
-}
-#sidebar span {
+#sidebar a {
     font-size: 0.7em;
+}
+#sidebar ul {
+    min-height: 0px;
+    /* height: 100%; */
+    overflow-y: auto; 
 }
 #sidebar h5 {
     text-transform: uppercase;
@@ -103,6 +110,9 @@ a {
 nav ul li a {
     text-transform: uppercase;
 }
+nav ul li {
+    padding: 10px;
+}
 #recently, #for-you, #popular {
     padding: 20px;
 }
@@ -113,10 +123,7 @@ section h2 {
     gap: 20px;
 }
 .card {
-    width: calc(100% / 6);
-}
-.card-content img {
-    width: 100%;
+    width: calc(100% / 6 - 20px);
 }
 .card-text h3 {
     color: var(--color-text-light);
@@ -133,17 +140,22 @@ dd {
     border-radius: 50%;
     overflow: hidden;
 }
+
+/* toolbar begin */
 #toolbar {
     padding: 10px;
 }
-.left-container{
-    width: calc(200px - 10px);
+.left-toolbar{
+    width: calc(25% - 10px);
+}
+.center-toolbar {
+    width: 50%;
+}
+.right-toolbar {
+    width: calc(25% - 10px);
 }
 .left-content {
     width: 40px;
-}
-#toolbar .left-content img {
-    width: 100%;
 }
 #toolbar dd {
     font-size: 0.7em;
@@ -221,4 +233,63 @@ dd {
 }
 .flex-end {
     justify-self: flex-end;
+}
+
+/* media query */
+@media screen and (max-width: 1200px) {
+    .card {
+        width: calc(100% / 4 - 20px);
+    }
+    .f-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% / 2 - 20px);
+    }
+}
+@media screen and (max-width: 576px) {
+    #header, main {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+    #sidebar {
+        width: 50px;
+        padding: 10px;
+    }
+    #sidebar .logo, #sidebar .logo-small {
+        width: 100%;
+        display: none;
+    }
+    #sidebar .logo-small {
+        display: block;
+    }
+    #home, #search, #library{
+        width: 100%;
+        margin-right: 0;
+    }
+    #sidebar ul li span {
+        display: none;
+    }
+    #sidebar .playlist {
+        display: none;
+    }
+    .bottom-sidebar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom-sidebar a span {
+        display: none;
+    }
+    .b-bottom, h4 {
+        display: none;
+    }
+    #download {
+        width: 20px;
+        margin-right: 0px;
+        padding-bottom: 20px;
+    }
 }
