@@ -113,6 +113,9 @@ nav ul li a {
 nav ul li {
     padding: 10px;
 }
+a:hover {
+    color: var(--color-text-light);
+}
 #recently, #for-you, #popular {
     padding: 20px;
 }
